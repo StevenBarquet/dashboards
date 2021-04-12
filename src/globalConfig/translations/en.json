@@ -1,0 +1,10 @@
+{
+  "header.menu.main": "Main",
+  "header.menu.notifications": "Notifications",
+  "header.menu.about": "About",
+  "header.menu.login": "Login",
+  "header.menu.home": "Home",
+
+  "user.option.logout": "Logout",
+  "user.option.password": "Change Password"
+}

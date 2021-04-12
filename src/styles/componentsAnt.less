@@ -1,0 +1,71 @@
+@import url('./globalVars.less');
+
+// STYLE FOR FILE UPLOADER
+.input-file-container {
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .action-delete {
+    cursor: pointer;
+  }
+  input[type='file'] {
+    display: none;
+  }
+  label {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  span {
+    font-weight: bold;
+    font-size: 10px;
+    margin: 2px;
+  }
+}
+// SECONDARY BUTTON
+.button-secondary {
+  background-color: @secondary !important;
+  color: @white !important;
+  border-color: @secondary !important;
+}
+ul > li {
+  .words {
+    word-break: break-all;
+  }
+}
+.logo {
+  width: 150px;
+  padding: 6px 0;
+  float: right;
+}
+.logo a {
+  display: inline-block;
+  font-size: 20px;
+  align-content: center;
+  text-transform: capitalize;
+}
+
+.LoginComponent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+// ERROR HANDLER --------------------------------------------
+.text-success {
+  color: @success;
+}
+.text-warning {
+  color: @warning;
+}
+.text-error {
+  color: @error;
+}
+.text-info {
+  color: @info;
+}

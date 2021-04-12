@@ -1,0 +1,93 @@
+{
+  "name": "template-iw-front-end",
+  "version": "0.1.0",
+  "description": "Template react-ssr",
+  "author": "IW team",
+  "license": "IW",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "sonar-scanner": "node sonar-project.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
+    }
+  },
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.9.24",
+    "@ant-design/icons": "^4.0.5",
+    "@hapi/boom": "^9.0.0",
+    "@hapi/joi": "^17.0.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "antd": "^3.26.7",
+    "axios": "^0.19.2",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-import": "^1.9.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "express": "^4.17.1",
+    "framer-motion": "^1.8.4",
+    "helmet": "^3.21.2",
+    "jest-sonar-reporter": "^2.0.0",
+    "json-server": "^0.16.0",
+    "less": "^3.11.1",
+    "less-vars-to-js": "1.3.0",
+    "next": "latest",
+    "next-page-transitions": "^1.0.0-beta.2",
+    "node-sass": "^4.13.1",
+    "nookies": "^2.0.8",
+    "null-loader": "2.0.0",
+    "querystring": "^0.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-draggable": "^4.4.2",
+    "react-intl": "^3.12.0",
+    "react-recaptcha": "^2.3.10",
+    "react-recaptcha-google": "^1.1.1",
+    "react-redux": "^7.1.0",
+    "react-spring": "^8.0.27",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "sonarqube-scanner": "^2.5.0",
+    "webpack-filter-warnings-plugin": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-import-resolver-webpack": "^0.12.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^22.21.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "file-loader": "^5.0.2",
+    "husky": "^2.7.0",
+    "lint-staged": "^10.0.4",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.19.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "./"
+    ],
+    "verbose": true
+  }
+}
